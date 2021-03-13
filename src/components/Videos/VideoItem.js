@@ -8,8 +8,6 @@ import "./VideoItem.css";
 const VideoItem = ({ video, loadVideos }) => {
   const history = useHistory();
 
-  console.log({video})
-
   const [likes,setLikes] = useState(video.reactions.likes)
   const [dislikes,setDislikes] = useState(video.reactions.dislikes)
 
@@ -20,22 +18,16 @@ const VideoItem = ({ video, loadVideos }) => {
   };
 
   const handleDislikes= async(id)=>{
-    // setDislikes(dislikes+1)
-    // await videoServices.updateVideo(id, {
-    //   ...video,
-    //  [video.reactions.dislikes]:dislikes
-    // })
+    setDislikes(dislikes + 1)
+    video.reactions.dislikes=(dislikes +1)
+    console.log(video)
+    await videoServices.updateVideo(id, video)
   }
   const handleLikes= async function(id){
     setLikes(likes + 1)
-    console.log(likes)
-    video.reactions.likes=likes
+    video.reactions.likes=(likes +1)
     console.log(video)
-    await videoServices.updateVideo(id, {video})
-    // await videoServices.updateVideo(id, {
-    //   ...video,
-    //   [video.reactions.likes]:likes
-    // })
+    await videoServices.updateVideo(id, video)
   }
   return (
     <div className="col-md-4 general-card" key={video._id}>

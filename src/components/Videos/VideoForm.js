@@ -9,6 +9,10 @@ const VideoForm = () => {
       url: "",
       title: "",
       description: "",
+      reactions:{
+        likes:0,
+        dislikes:0,
+      }
     };
   };
 

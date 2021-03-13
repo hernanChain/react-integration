@@ -18,7 +18,7 @@ export const getVideo = async (id) => {
 
 export const updateVideo = async (id, video) =>{
     
-    // console.log({video})
+    console.log({video})
     const updateVideo = await axios.patch(`${API}/updateVideo/${id}`,video)
     return updateVideo;
 }
