@@ -1,4 +1,14 @@
-# Getting Started with Create React App
+# React Intregation with Video Tyeyscript API
+
+[Documentation API](https://app.swaggerhub.com/apis/JohamSMC/api-typescript-reactIntegration/1.0.0#/)
+
+[![GitHub JOHAM](https://img.shields.io/badge/GitHub-JohamSMC-red?style=plastic&logo=github&link=https://github.com/JohamSMC)](https://github.com/JohamSMC)
+[![GitHub ARIAS](https://img.shields.io/badge/GitHub-AriasPaez-green?style=plastic&logo=github&link=https://github.com/AriasPaez)](https://github.com/AriasPaez)
+[![GitHub HERNAN](https://img.shields.io/badge/GitHub-HernanChain-blue?style=plastic&logo=github&link=https://github.com/HernanChain)](https://github.com/HernanChain)
+
+![GitHub License](https://img.shields.io/github/license/hernanChain/react-integration?style=style=flat-square)
+![GitHub last commit](https://img.shields.io/github/last-commit/hernanChain/react-integration?style=style=flat-square)
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
